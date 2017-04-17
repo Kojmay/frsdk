@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1D2DB3CB1EA4F02E00E95D61 /* FRSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB3CA1EA4F02E00E95D61 /* FRSDK.m */; };
 		1D2DB3CC1EA4F02E00E95D61 /* FRSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D2DB3C91EA4F02E00E95D61 /* FRSDK.h */; };
+		1D70A2B01EA5001100F221FB /* FRKeychainOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D70A2A51EA4F9BA00F221FB /* FRKeychainOperation.h */; };
+		1D70A2B11EA5001100F221FB /* FRKeychainOperation.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D70A2A61EA4F9BA00F221FB /* FRKeychainOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,6 +20,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				1D70A2B01EA5001100F221FB /* FRKeychainOperation.h in CopyFiles */,
+				1D70A2B11EA5001100F221FB /* FRKeychainOperation.m in CopyFiles */,
 				1D2DB3CC1EA4F02E00E95D61 /* FRSDK.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,6 +32,8 @@
 		1D2DB3C61EA4F02E00E95D61 /* libFRSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFRSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D2DB3C91EA4F02E00E95D61 /* FRSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRSDK.h; sourceTree = "<group>"; };
 		1D2DB3CA1EA4F02E00E95D61 /* FRSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRSDK.m; sourceTree = "<group>"; };
+		1D70A2A51EA4F9BA00F221FB /* FRKeychainOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRKeychainOperation.h; sourceTree = "<group>"; };
+		1D70A2A61EA4F9BA00F221FB /* FRKeychainOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRKeychainOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +68,26 @@
 			children = (
 				1D2DB3C91EA4F02E00E95D61 /* FRSDK.h */,
 				1D2DB3CA1EA4F02E00E95D61 /* FRSDK.m */,
+				1D70A2A41EA4F9BA00F221FB /* KeychainOperation */,
+				1D2DB3D81EA4F0D900E95D61 /* Networking */,
 			);
 			path = FRSDK;
+			sourceTree = "<group>";
+		};
+		1D2DB3D81EA4F0D900E95D61 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1D70A2A41EA4F9BA00F221FB /* KeychainOperation */ = {
+			isa = PBXGroup;
+			children = (
+				1D70A2A51EA4F9BA00F221FB /* FRKeychainOperation.h */,
+				1D70A2A61EA4F9BA00F221FB /* FRKeychainOperation.m */,
+			);
+			path = KeychainOperation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +196,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -214,7 +238,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -260,6 +284,7 @@
 				1D2DB3D11EA4F02E00E95D61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

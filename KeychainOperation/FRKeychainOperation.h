@@ -1,5 +1,5 @@
 //
-//  FRSDK.h
+//  FRKeychainOperation.h
 //  FRSDK
 //
 //  Created by HaifengMay on 17/04/2017.
@@ -8,10 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FRSDK : NSObject
-
-+ (NSString *)getUUID;
-+ (Boolean) isUUIDExisted;
-+ (void)resetUUID;
+@interface FRKeychainOperation : NSObject
 
 @end
